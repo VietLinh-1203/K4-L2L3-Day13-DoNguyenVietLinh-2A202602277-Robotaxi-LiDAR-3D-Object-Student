@@ -4,10 +4,13 @@ Giữ bản đã điền ngoài Git, trong thư mục nhóm private do LC thu. �
 
 ## Nhóm và provenance
 
-- Mã nhóm/phòng: Nhóm 01 (`ket-qua-nhom-01`); mã phòng LC chưa được cung cấp.
-- Thành viên: xem `TEAMMATES.md` (họ tên/MSSV, vai trò từng lượt). Phân vai trong bảng là đề xuất luân phiên, nhóm cần xác nhận đúng với thực tế.
-- Trạng thái: `provided-results` (tổng hợp output có sẵn; không có nhật ký xác định từng người chạy).
-- Người thực sự chạy; ngày/giờ; hệ máy/architecture: người chạy chưa được ghi; output tạo ngày 2026-10-02 23:21:38–23:22:52 (UTC+7, đổi từ `smoke.json`); runtime Linux/Docker `amd64`, 4 CPU/4 GB container; host cụ thể chưa ghi.
+- Mã nhóm/phòng: TTL/H210
+- Thành viên: 
+| Đỗ Nguyễn Việt Linh | 2A202602277 | Vận hành runner | Đọc JSON/cấu hình | Ghi log/kết quả |
+| Nguyễn Hoài Thanh | 2A202602173 | Đọc JSON/cấu hình | Ghi log/kết quả | Vận hành runner |
+| Trần Nhật Tân | 2A202602209 | Ghi log/kết quả | Vận hành runner | Đọc JSON/cấu hình |
+- Trạng thái: `provided-results`
+- Người thực sự chạy; ngày/giờ; hệ máy/architecture: Đỗ Nguyễn Việt Linh; output tạo ngày 2026-10-02 23:21:38–23:22:52 (UTC+7, đổi từ `smoke.json`); runtime Linux/Docker `amd64`, 4 CPU/4 GB container; host cụ thể chưa ghi.
 - Image tag và image ID; phiên bản repo: `day13-pointpillars:lc-20261001-amd64`; `sha256:e03983bd922ec29890bf547db8de408402efd82583680b62e671c20da2fd2c82`; revision `0831856d921609312d42c7582c366e5a311bb7b1` (working tree dirty theo manifest).
 - PCD được cấp / frame_id; nơi được phép chạy; fingerprint nếu LC cấp: `input/demo.pcd` / `demo`, KITTI demo 000008 chuyển đổi, 17.238 điểm, SHA256 `3b5ea3da13e2b19149cab6a8d521c2ca55f2df93f026b5a3f8c273ce70645d60`; chỉ xác nhận được gói Student chạy trên mẫu này; nơi/fingerprint LC chưa được cung cấp. x/y giữ nguyên, z đã cộng 1,73 m; reflectance bị bỏ, rgb=0 placeholder. Không có dữ liệu Robotaxi/VinFast.
 - Checkpoint: PointPillars KITTI có sẵn trong image; ghi checkpoint ID/hash nếu LC cấp: `/opt/PointPillars/pretrained/epoch_160.pth`; SHA256 `482dfcf63b932cc5ccf012b4bbdad52aa51aa33becf87d0a39d61c39b377b5b1`.
